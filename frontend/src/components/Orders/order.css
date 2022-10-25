@@ -1,0 +1,27 @@
+.orderContainer {
+    border: 1px solid black;
+    border-radius: 15px;
+    margin: 12px 0px;
+}
+
+.orderInfoContainer {
+    padding: 0px 10px;
+}
+
+.orderContainer-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.orders {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 12px 0px;
+}
+
+.orders-left > img {
+    width: 100px;
+    height: 80px;
+}

@@ -1,0 +1,35 @@
+.cartContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.noItemsCart {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.noItemsCart > a {
+    text-decoration: none;
+    color: white;
+    padding: 15px 20px;
+    background-color: rgb(80, 80, 80);
+}
+
+.noItemsCart > a:hover {
+    background-color: black;
+} 
+
+.checkOutButton {
+    transform: translate(-50%, 0%);
+    position: relative;
+    left: 50%;
+}
+
+.checkOutButton > a {
+    text-decoration: none;
+    color: white;
+}

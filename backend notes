@@ -1,0 +1,45 @@
+1) Create an index.js file
+2) Setup config.env 
+3) Make sure to use json in application - app.use(express.json()) 
+4) app.listen
+5) Create db.js and connect to database using mongoose
+6) Create models
+7) Create routes
+         - Create a main route in index.js
+         - Create routes folder with route.js
+         - connect them to different routes using express.Router
+         - Create a controller folder with controller.js containing all functions for CRUD operations
+8) Create error handling 
+         - Create utils folder with errorhandler.js
+         - Inherit Error class
+         - Pass message and statusCode as arguments in constructors(ie, when we call the class we can pass message and statusCode as arguments)
+         - Create a middleware with errors.js as shown
+         - use the middleware in index.js - app.use(errorMiddleware)
+         - Now you can start using errorhandler in controller - return next(new ErrorHandler("Product Not Found", 404))
+9) Catch Async errors (errors occuring when some data is missed by the user eg - name of product while creating product)
+         - Create CatchAsyncErrors.js in middleware
+         - In this fuction use Promise.resolve as try then use catch to catch errors
+10) Unhandled Rejection Error (in the end)
+11) Handling uncaught error (in the start)
+12) Cast Error (Wrong Url used for CRUD operations)
+13) Add Name Search feature (apiFeatures)
+14) Add Category search feature (apiFeatures)
+15) Pagifination
+
+
+------------------------------ Create Backend Login for user ------------------------------
+16) Create User Model
+17) Create routes (Same as 7)
+18) Password bcrypt in userModel
+19) Create and save a token in cookie
+20) Create a middleware which will check if the user is logged in or not
+21) Create Logout function
+22) Setup admin and other roles functionality
+23) Store the name of the user who created a product
+24) Forgot Password
+25) Create Setting options (Someone wants to check profile or change password)
+
+Notes - Types of errors
+         - Wrong Id given 
+         - Required data not given (Catch Async errors)
+         - Wrong Link provided while connecting to server (Unhandled Rejection Error)

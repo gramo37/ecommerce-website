@@ -1,0 +1,55 @@
+.confirmOrderPage > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin: 2px 15px;
+}
+
+.confirmShippingAreaBox > div {
+    display: flex;
+    margin: 10px 0px;
+}
+
+.confirmShippingAreaBox > div > p {
+    margin: 0px 5px;
+}
+
+.confirmCartItemsContainer {
+    height: 120px;
+    overflow:auto;
+    width: 90vw;
+    margin: 20px 0px;
+}
+
+.confirmCartItemsContainer > div {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.confirmCartItemsContainer > div > a {
+    text-decoration: none;
+    margin: 0px 5px;
+    color: black;
+}
+
+.confirmCartItemsContainer > div > img {
+    height: 80px;
+    width: 80px;
+}
+
+.orderSummary > div {
+    display: flex;
+    flex-direction: column;
+}
+
+.orderSummary > div > div {
+    display: flex;
+    margin: 5px 0px;
+}
+
+.orderSummary > div > div > p, .orderSummaryTotal > p {
+    margin: 0px 15px;
+}

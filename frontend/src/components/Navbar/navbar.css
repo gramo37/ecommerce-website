@@ -1,0 +1,100 @@
+/* header options */
+
+.HeaderOptionContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    margin: 0px 10px;
+    color: grey;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.HeaderOptionContainer:hover{
+    color: black;
+
+}
+
+.nav-link{
+    text-decoration: none;
+    color: black;
+}
+
+/* .HeaderOptionIcon{
+    
+} */
+
+.HeaderOptionContainer h6 {
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+
+
+
+/* Header  */
+
+.header{
+    display: flex;
+    flex-direction: row;
+    position: sticky;
+    top: 0;
+    justify-content: space-evenly;
+    width: 100%;
+    z-index: 20;
+    border-bottom: 0.1px solid lightgray;
+    background-color: white;
+}
+
+.headerLeft{
+    margin: 8px;
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.headerSearch{
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    border-radius: 5px;
+    color: grey;
+    background-color: #eef3f8;
+    height: 40px;
+    padding: 8px;
+    border: none;
+}
+
+.headerSearch > div > form > input {
+    background-color: #eef3f8;
+    border: none;
+    outline: none;
+    margin-left: 5px;
+    color: rgb(54, 54, 54);
+}
+
+.me-2 {
+    background-color: #eef3f8;
+    border: none;
+}
+
+.headerSearch > input{
+    outline: none;
+    border: none;
+    background: none;
+}
+
+.headerLeft > img{
+    object-fit: contain;
+    height: 40px;
+}
+
+.headerRight {
+    display: flex;
+    align-items: center;
+    margin: 4px 0px;
+    margin-left: 30px;
+}

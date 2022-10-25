@@ -1,0 +1,148 @@
+.productContainer {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: auto auto auto auto;
+}
+
+.product-card-holder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 10px;
+    animation: slowLoad 1s ease;
+    cursor: pointer;
+}
+
+.card {
+    transition: all 0.5s;
+
+}
+
+.reviewBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-card-holder:hover > .card {
+    transform: translate(0%, -2.5%);
+    box-shadow: 1px 1px 1px 1px #888888;
+}
+
+@keyframes slowLoad {
+    0%{
+        transform: translate(0, -100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+}
+
+.productDetails {
+    width: 100vw;
+    max-width: 100%;
+    padding: 6vmax;
+    box-sizing: border-box;
+    display: flex;
+}
+
+.productDetails > div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    /* padding: 2vmax; */
+    box-sizing: border-box;
+}
+
+.productDetails > div:last-child {
+    align-items: flex-start;
+}
+
+.Carousel-image {
+    width: 20vmax;
+}
+
+.left-details {
+    width: 50vw;
+    /* height: 80vh; */
+}
+
+.detailsblock-3-1-1 {
+    display: flex;
+}
+
+.right-details {
+    padding-right: 5px;
+}
+
+.noReviews{
+    text-align: center;
+    font-size: 15px;
+    font-style: italic;
+    color: grey
+}
+
+.pageButton {
+    display: flex;
+    justify-content: space-between;
+}
+
+.filterBoxContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+.filterBox{
+    width: 500px;
+    margin-left: 20px;
+    padding: 0px 10px;
+}
+
+@media only screen and (max-width: 1400px) {
+    .productContainer {
+            grid-template-columns: auto auto auto;
+            width: 100vw;
+        }
+    .product-card-holder{
+        margin: 0px 0px;
+    }
+    .productDetails {
+        flex-direction: column;
+    }
+    .right-details {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .right-details > div{
+        position: relative;
+        left: 50%;
+        transform: translate(-50%, 0%);
+    }
+    }
+    
+    @media only screen and (max-width: 940px) {
+    .productContainer {
+            grid-template-columns: auto auto;
+            width: 100vw;
+        }
+    }
+    
+    @media only screen and (max-width: 625px) {
+    .productContainer {
+            grid-template-columns: auto auto;
+        }
+    .product-card-holder {
+            width: 40vw;
+            /* height: 50vh; */
+        }
+        .reviewBox{
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }

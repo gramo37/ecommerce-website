@@ -1,0 +1,5 @@
+1) Do basic frontend
+2) Start with redux
+        - create a store
+        - add provider in index.js\
+Note - Dont forget to add proxy in frontend package.json for axios

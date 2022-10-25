@@ -1,0 +1,29 @@
+.showFilter{
+    /* display: block; */
+    opacity: 1;
+    transform: translate(0%, 0%);
+}
+
+.hideFilter{
+    /* display: none; */
+    opacity: 0;
+    transform: translate(0%, -200%);
+}
+
+.filterContainer{
+    /* display: block; */
+    /* transform: translate(50%, 0%); */
+    transition: 0.5s;
+    position: absolute;
+    background-color: rgb(243, 243, 243);
+    top: 60px;
+    right: 0px;
+    border-radius: 20px;
+}
+
+.iconHolder {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

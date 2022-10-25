@@ -1,0 +1,42 @@
+{
+  "name": "gramokart",
+  "version": "1.0.0",
+  "description": "Basic ecom store",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "cd backend && node ./index.js",
+    "dev": "code . && concurrently \"cd backend && nodemon ./index.js\" \"cd frontend && npm start\"",
+    "both": "concurrently \"cd backend && nodemon ./index.js\" \"cd frontend && npm start\""
+  },
+  "author": "gramo",
+  "license": "ISC",
+  "dependencies": {
+    "@emotion/react": "^11.7.1",
+    "@emotion/styled": "^11.6.0",
+    "@mui/icons-material": "^5.2.5",
+    "@mui/material": "^5.2.7",
+    "@mui/styles": "^5.2.3",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.1",
+    "cloudinary": "^1.28.1",
+    "concurrently": "^7.0.0",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.2",
+    "express-fileupload": "^1.2.1",
+    "fs": "0.0.1-security",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.1.4",
+    "nodemailer": "^6.7.2",
+    "nodemon": "^2.0.15",
+    "os": "^0.1.2",
+    "path": "^0.12.7",
+    "react-infinite-scroll-component": "^6.1.0",
+    "react-material-ui-carousel": "^3.1.1",
+    "react-responsive-carousel": "^3.2.22",
+    "stripe": "^8.201.0",
+    "validator": "^13.7.0"
+  }
+}

@@ -1,0 +1,146 @@
+.loginSignupContainer{
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+}
+
+.loginSignupBox{
+    background-color: white;
+    margin: 0px 10px;
+    height: 60vh;
+    min-width: 50vw;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px rgb(255, 255, 255) ;
+}
+
+.loginSignupBox > div > button {
+    background-color: tomato;
+    height: 3px;
+    width: 50%;
+    border: none;
+    transition: all 0.5s;
+}
+
+.login_signup_toggle{
+    display: flex;
+    height: 3vmax;
+}
+
+.login_signup_toggle > p {
+    width: 50%;
+    text-align: center;
+    font-size: large;
+    font-weight: 800;
+    transition: all 0.5s;
+    cursor: pointer;
+    display: grid;
+    width: 100%;
+}
+
+.login_signup_toggle > p:hover {
+    color: tomato;
+}
+
+.loginForm, .signupForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    justify-content: space-evenly;
+    /* transform: translate(0, 54%); */
+    padding: 2vmax;
+    transition: all 0.5s;
+}
+
+.signupForm {
+    opacity: 0;
+    /* display: none; */
+    transform: translateY(-50%) translateX(-100%);
+}
+
+.registerImage > img {
+    height: 50px;
+    width: 50px;
+}
+
+.registerImage > input {
+    border: none;
+    display: flex;
+    padding: 0%;
+}
+
+.loginForm > div, .signupForm > div {
+    padding: 2vmax;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.loginForm > div > input,
+.signupForm > div > input,
+.signupName > select {
+    padding: 1vmax 4vmax;
+    padding-right: 1vmax;
+    width: 100%;
+    box-sizing: border-box;
+    outline: none;
+    border: 1px solid grey;
+    border-radius: 4px;
+    /* font: 600 0.9vmax cursive; */
+}
+
+.loginForm > div > svg,
+.signupForm > div > svg {
+    position: absolute;
+    transform: translateX(1vmax);
+    font-size: 2.5vmax;
+    color: (0, 0, 0, 0.623);
+}
+
+.forgotPassword {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.forgotPassword > a {
+    text-decoration: none;
+    color: blue;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.forgotPassword > a:hover {
+    color: tomato;
+}
+
+.shiftToRight {
+    transform: translateX(100%)
+}
+
+.shiftToNeutral {
+    transform: translateX(0%)
+}
+
+.shiftToLeft {
+    transform: translateX(100%);
+    opacity: 0;
+    /* display: none; */
+}
+
+.shiftToNeutralForm {
+    opacity: 1;
+    /* display: block; */
+    transform: translateX(0%) translateY(-76%);
+}
+
+
+@media only screen and (min-width: 1200px) {
+    .loginSignupBox {
+        height: 630px;
+    }
+}

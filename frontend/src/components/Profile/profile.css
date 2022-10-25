@@ -1,0 +1,38 @@
+.profileContainer {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.leftProfile, .rightProfile {
+    width: 50%;
+}
+
+.leftProfile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* height: 50vh; */
+}
+
+.leftProfile > img {
+    width: 200px;
+    height: 300px;
+}
+
+.rightProfile > div:last-child {
+    display: flex;
+    flex-direction: column;
+}
+
+.leftProfile > a, .rightProfile > div:last-child > a {
+    text-decoration: none;
+    color: rgb(65, 65, 65);
+}
+
+.leftProfile > a:hover, .rightProfile > div:last-child > a:hover {
+    color: rgb(161, 161, 161);
+}
