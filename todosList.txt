@@ -1,0 +1,2 @@
+1) Add, Edit and Delete Product functionality for admin
+2) OrderInfo functionality
